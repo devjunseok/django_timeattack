@@ -1,11 +1,7 @@
-from rest_framework.generics import get_object_or_404
 from rest_framework.views import APIView
 from rest_framework import status
-from rest_framework import permissions
 from rest_framework.response import Response
-from articles import serializers
 from articles.models import Article
-from django.db.models.query_utils import Q
 from articles.serializers import ArticleListSerializer, ArticleCreateSerializer
 
 
